@@ -42,3 +42,4 @@ function getCurrentHour(date, getTwelveHour) {
 }
 
 setInterval(displayTime, 10); //displays time the first time
+
