@@ -25,18 +25,48 @@ html, body {
     margin-left: 0.5%;
     z-index: 4;
 }
+
 .timeDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Quicksand', sans-serif;
     color: white;
-    font-size: 35vh;
+    font-size: 10vh;
     z-index: 3;
-    justify-content: space-between;
-    margin-left: 10%;
+    width: 100%;
     overflow: hidden;
 }
 
-.inline{
-  margin-top: 10%;
-  text-align: center;
-  display: inline;
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .timeDisplay {
+        font-size: 15vh;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .timeDisplay {
+        font-size: 25vh;
+    }
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .timeDisplay {
+        font-size: 31vh;
+    }
+}
+
+.inline {
+    display: inline;
 }
