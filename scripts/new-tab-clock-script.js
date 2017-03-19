@@ -1,7 +1,10 @@
-var timeDisplay = document.getElementById('timeDisplay');
+var timeHour = document.getElementById('timeHour');
+var timeMinute = document.getElementById('timeMinute');
+var timeSecond = document.getElementById('timeSecond');
+var timeSeperater = document.getElementsByClassName('timeSeperater');
 
 var twelveHourClock = false;
-
+var seperater = ":"
 function formatTime(i) {
     if (i < 10) {
         i = '0' + i;
@@ -24,7 +27,13 @@ function displayTime() {
     var currentSeconds = today.getSeconds();
     currentMinutes = formatTime(currentMinutes);
     currentSeconds = formatTime(currentSeconds);
-    timeDisplay.innerHTML = currentHours + ':' + currentMinutes + ':' + currentSeconds;
+    timeHour.innerHTML = currentHours;
+    timeMinute.innerHTML = currentMinutes;
+    timeSecond.innerHTML = currentSeconds;
+    for (i = 0; i < timeSeperater.length; i++) {
+        timeSeperater[i].innerHTML = seperater;
+    }
+
 }
 
 /*
@@ -42,4 +51,3 @@ function getCurrentHour(date, getTwelveHour) {
 }
 
 setInterval(displayTime, 10); //displays time the first time
-

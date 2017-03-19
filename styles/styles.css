@@ -7,24 +7,9 @@ html, body {
     background-size: cover;
 }
 
-.blur-div {
-    background-color: #3e3e3e;
-    opacity: 0.2;
-    width: 100%;
-    height: 97.5vh;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    -webkit-filter: blur(55px);
-    -moz-filter: blur(55px);
-    -o-filter: blur(55px);
-    -ms-filter: blur(55px);
-    filter: blur(55px);
-}
-
 .not-blur-div {
     background-color: #3e3e3e;
-    opacity: 0.2;
+    opacity: 0.4;
     width: 100%;
     height: 97.5vh;
     top: 0;
@@ -32,17 +17,26 @@ html, body {
     z-index: 2;
 }
 
-#timeDisplay {
-  font-family: 'Quicksand', sans-serif;
-  color: white;
-  width: 50%;
-  font-size: 128pt;
-  z-index: 3;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  overflow: auto;
+#amToPm {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+    z-index: 4;
+}
+.timeDisplay {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: 35vh;
+    z-index: 3;
+    justify-content: space-between;
+    margin-left: 10%;
+    overflow: hidden;
+}
+
+.inline{
+  margin-top: 10%;
+  text-align: center;
+  display: inline;
 }
