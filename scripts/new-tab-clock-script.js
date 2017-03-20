@@ -4,7 +4,7 @@ var timeSecond = document.getElementById('timeSecond');
 var timeSeperater = document.getElementsByClassName('timeSeperater');
 
 var twelveHourClock = false;
-var seperater = ":"
+var seperater = ":";
 function formatTime(i) {
     if (i < 10) {
         i = '0' + i;
@@ -33,6 +33,7 @@ function displayTime() {
     for (i = 0; i < timeSeperater.length; i++) {
         timeSeperater[i].innerHTML = seperater;
     }
+
 
 }
 
