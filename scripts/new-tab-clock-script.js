@@ -3,7 +3,7 @@ var timeMinute = document.getElementById('timeMinute');
 var timeSecond = document.getElementById('timeSecond');
 var timeSeperater = document.getElementsByClassName('timeSeperater');
 
-var twelveHourClock = false;
+var twelveHourClock = true;
 var seperater = ":";
 function formatTime(i) {
     if (i < 10) {
