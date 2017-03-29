@@ -1,17 +1,20 @@
 {
     "name": "New Tab",
-    "version": "1.0",
+    "version": "2.0",
     "manifest_version": 2,
     "background": {
         "scripts": ["scripts/extenstion.js"]
     },
-    "permissions": "tabs",
     "browser_action": {
         "default_icon": "images/icon.png"
     },
+
     "chrome_url_overrides": {
         "newtab": "index.html"
     },
+    "permissions": [
+        "tabs"
+    ],
     "icons": {
         "16": "images/icon.png",
         "48": "images/icon48.png",
