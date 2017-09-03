@@ -1,7 +1,7 @@
 {
     "name": "New Tab",
-    "version": "2.0",
-    "manifest_version": 2,
+    "version": "3.0",
+    "manifest_version": 3,
     "background": {
         "scripts": ["scripts/extenstion.js"]
     },
